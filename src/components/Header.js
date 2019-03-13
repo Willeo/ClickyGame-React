@@ -12,10 +12,10 @@ export const Header = ({ guess, score, topScore }) => (
             <Col size="6">
                 <h1 className="text-center">Memory Game</h1>
             </Col>
-            <Col size="4">
+            <Col size="6">
                 <h4 className="text-center">{guess ? 'You guessed correctly!' : 'You guessed incorrectly.'}</h4>
             </Col>
-            <Col size="4">
+            <Col size="6">
                 <h4 className="text-center">
                     Score:{score} | Top Score:{topScore}
                 </h4>
