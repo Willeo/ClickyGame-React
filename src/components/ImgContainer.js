@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from './';
+import { Card } from './Card';
 
 export const ImgContainer = ({ image, onClick, id }) => (
     <Card>

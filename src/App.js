@@ -46,6 +46,7 @@ class App extends Component {
         this.setState({ alreadyGuessed: alreadyGuessed, score: score, topScore: topScore, pics: pics, guess: guess });
     }
     render() {
+        // eslint-disable-next-line
         let { score, topScore, guess, alreadyGuessed, pics } = this.state;
         return (
             <div className="App">
