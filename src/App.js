@@ -13,7 +13,7 @@ class App extends Component {
         alreadyGuessed: [],
     };
     componentDidMount() {
-        API.getImages(undefined, '50').then(data => {
+        API.getImages(undefined, '33').then(data => {
             data = data.data.data.filter((pic, i, pics) => {
                 let fHeight = pics[0].images.fixed_width_still.height;
                 return pic.images.fixed_width_still.height === fHeight;
@@ -46,7 +46,6 @@ class App extends Component {
         this.setState({ alreadyGuessed: alreadyGuessed, score: score, topScore: topScore, pics: pics, guess: guess });
     }
     render() {
-        // eslint-disable-next-line
         let { score, topScore, guess, alreadyGuessed, pics } = this.state;
         return (
             <div className="App">
